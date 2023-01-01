@@ -23,7 +23,7 @@ public class sql_connect extends AsyncTask<Void,Void,String> { //SELECT * FROM t
         try{
             str = "SELECT * FROM testbd"; //tasks
 // Creating new socket connection to the IP (first parameter) and its opened port (second parameter)
-            s = new Socket("62.140.233.174", 1337);
+            s = new Socket("your ip", "yourport");
             inputRead = new InputStreamReader(s.getInputStream());
             bufread = new BufferedReader(inputRead);
 
